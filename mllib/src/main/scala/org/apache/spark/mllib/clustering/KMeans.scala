@@ -236,6 +236,9 @@ class KMeans private (
       data: RDD[VectorWithNorm],
       instr: Option[Instrumentation[NewKMeans]]): KMeansModel = {
 
+
+    val test = "test"
+
     val sc = data.sparkContext
 
     val initStartTime = System.nanoTime()
